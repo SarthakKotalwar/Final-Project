@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management</h1>
+    </header>
+
+    <main>
+        <section class="doctors">
+            <h2>Doctors</h2>
+            <ul id="doctor-list">
+                <li>Dr. Smith</li>
+                <li>Dr. Johnson</li>
+                <li>Dr. Brown</li>
+                <!-- Add more doctors -->
+            </ul>
+        </section>
+
+        <section class="appointment">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" required>
+                    <option value="1">Dr. Smith</option>
+                    <option value="2">Dr. Johnson</option>
+                    <option value="3">Dr. Brown</option>
+                    <!-- Add more doctor options -->
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section class="appointments">
+            <h2>Your Appointments</h2>
+            <ul id="appointment-list">
+                <!-- Appointments will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hospital Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
